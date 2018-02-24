@@ -1,0 +1,10 @@
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/bin/Debug/netcoreapp2.0/aminpanel.deps.json
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/bin/Debug/netcoreapp2.0/aminpanel.runtimeconfig.json
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/bin/Debug/netcoreapp2.0/aminpanel.runtimeconfig.dev.json
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/bin/Debug/netcoreapp2.0/aminpanel.dll
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/bin/Debug/netcoreapp2.0/aminpanel.pdb
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/obj/Debug/netcoreapp2.0/aminpanel.csproj.CoreCompileInputs.cache
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/obj/Debug/netcoreapp2.0/aminpanel.AssemblyInfoInputs.cache
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/obj/Debug/netcoreapp2.0/aminpanel.AssemblyInfo.cs
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/obj/Debug/netcoreapp2.0/aminpanel.dll
+/Volumes/Kalyana/RnD/DotNetCore/adminpanel/obj/Debug/netcoreapp2.0/aminpanel.pdb
