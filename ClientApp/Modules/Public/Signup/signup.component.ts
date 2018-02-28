@@ -11,6 +11,5 @@ import { Component } from "@angular/core";
 export class SignupComponent{
 
     constructor(){
-        console.log("THis is Signup Page");
     }
 } 
