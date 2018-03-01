@@ -1,0 +1,19 @@
+<div class="panel-body">
+        <table class="table">
+        <thead>
+          <tr>
+            <th *ngFor="let th of tblPayload.tbheader">
+            {{th}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let row of tblPayload.tbBody ">
+            <td>{{row.c1}}</td>
+            <td>{{row.c2}}</td>
+            <td>{{row.c3}}</td>
+            <td>{{row.c4}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>

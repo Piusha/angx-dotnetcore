@@ -17,19 +17,19 @@ export class SideNavigationComponent implements OnInit{
 
         this.menuItems = [
             {
-                url:'/dashboard',
+                url:'/secure/dashboard',
                 icoClass:'glyphicon-home',
                 lable:'Home'
             },
             {
-                url:'/calendar',
+                url:'/secure/calendar',
                 icoClass:'glyphicon-calendar',
                 lable:'Calender'
             },
             {
-                url:'test',
+                url:'/secure/items',
                 icoClass:'glyphicon-stats',
-                lable:'Stars'
+                lable:'Tables'
             },
             {
                 url:'test',
@@ -38,6 +38,11 @@ export class SideNavigationComponent implements OnInit{
             }             
 
         ]
+
+        
         
     }
+
+
+    
 } 

@@ -15,6 +15,8 @@ import { PublicComponent } from '../Public/public.component';
 import { ContactusComponent } from '../Public/ContactUs/contactus.component';
 import { SideNavigationComponent } from '../Sheared/SideNavigation/side_navigation.component';
 import { CalendarComponent } from '../Secure/Calendar/calendar.component';
+import { CustomTableComponent } from '../Sheared/Table/table.component';
+import { ItemsComponent } from '../Secure/Items/items.component';
 @NgModule({
 
     imports:[
@@ -33,7 +35,9 @@ import { CalendarComponent } from '../Secure/Calendar/calendar.component';
         PublicComponent,
         ContactusComponent,
         SideNavigationComponent,
-        CalendarComponent
+        CalendarComponent,
+        CustomTableComponent,
+        ItemsComponent
     ],
     bootstrap:[AppComponent]
 

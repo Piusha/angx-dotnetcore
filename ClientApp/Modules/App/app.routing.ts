@@ -18,7 +18,7 @@ const routes : Routes = [
         pathMatch:'full'
     },
     { path: '', component: PublicComponent,  children: PUBLIC_ROUTES },
-    { path: '', component: SecureComponent,  children: SECURE_ROUTES },
+    { path: 'secure', component: SecureComponent,  children: SECURE_ROUTES },
 ]
 
 

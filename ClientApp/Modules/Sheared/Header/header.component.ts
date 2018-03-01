@@ -13,16 +13,12 @@ export class HeaderComponent implements OnInit{
     private mType:any[];
     constructor(){
 
-        console.log(this.menuType)
     }
 
     ngOnInit(){
 
         this.mType = this.menuType.split(',');
 
-        console.log(this.mType);
-
-        console.log(this.mType);
         
     }
 } 
