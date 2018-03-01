@@ -1,2 +1,14 @@
 <app-header menu-type='navigation,searchable' ></app-header>
-<router-outlet></router-outlet>
+
+<div class="page-content">
+    <div class="row">
+        <div class="col-md-2">
+
+            <side-navigation></side-navigation>
+
+        </div>
+        <div class="col-md-10">
+                <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -13,6 +13,8 @@ import { SecureComponent } from '../Secure/secure.component';
 import { DashboardComponent } from '../Secure/Dashboard/dashboard.component';
 import { PublicComponent } from '../Public/public.component';
 import { ContactusComponent } from '../Public/ContactUs/contactus.component';
+import { SideNavigationComponent } from '../Sheared/SideNavigation/side_navigation.component';
+import { CalendarComponent } from '../Secure/Calendar/calendar.component';
 @NgModule({
 
     imports:[
@@ -29,7 +31,9 @@ import { ContactusComponent } from '../Public/ContactUs/contactus.component';
         SecureComponent,
         DashboardComponent,
         PublicComponent,
-        ContactusComponent
+        ContactusComponent,
+        SideNavigationComponent,
+        CalendarComponent
     ],
     bootstrap:[AppComponent]
 
