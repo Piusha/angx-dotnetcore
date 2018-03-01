@@ -12,6 +12,7 @@ import { HeaderComponent } from '../Sheared/Header/header.component';
 import { SecureComponent } from '../Secure/secure.component';
 import { DashboardComponent } from '../Secure/Dashboard/dashboard.component';
 import { PublicComponent } from '../Public/public.component';
+import { ContactusComponent } from '../Public/ContactUs/contactus.component';
 @NgModule({
 
     imports:[
@@ -27,7 +28,8 @@ import { PublicComponent } from '../Public/public.component';
         HeaderComponent,
         SecureComponent,
         DashboardComponent,
-        PublicComponent
+        PublicComponent,
+        ContactusComponent
     ],
     bootstrap:[AppComponent]
 
