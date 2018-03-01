@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
-
+import { HttpModule }     from '@angular/http';
 
 
 
@@ -29,7 +29,8 @@ import { ItemsComponent } from '../Secure/Items/items.component';
         BrowserModule,
         routing,
         FormsModule, 
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        HttpModule
 
     ],
     declarations:[

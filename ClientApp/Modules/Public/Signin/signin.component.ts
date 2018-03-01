@@ -4,9 +4,11 @@ import {
     FormGroup, 
     Validators,
     FormBuilder } from '@angular/forms';
+import { SigninService } from "./signin.service";
 @Component({
     selector:'signin',
-    templateUrl:'./signin.component.html'
+    templateUrl:'./signin.component.html',
+    providers:[SigninService]
 })
 export class SigninComponent implements OnInit{
 
@@ -18,7 +20,9 @@ export class SigninComponent implements OnInit{
      * Invoke Reactive Formbuilder components to create
      * Angular form
      */
-    constructor( private fb:FormBuilder){
+    constructor( private fb:FormBuilder,
+    private signinSrv:SigninService 
+    ){
 
     }
 
@@ -55,7 +59,9 @@ export class SigninComponent implements OnInit{
         if(this.signinForm.valid){
             let authData = this.signinForm.value;
 
-            console.log(authData);
+            this.signinSrv.sendLoginReq(authData).subscribe((data)=>{
+                console.log(data);
+            })
         }
     }
 } 

@@ -3,3 +3,5 @@ wwwroot/dist
 package-lock.json
 
 .vscode
+
+bin
