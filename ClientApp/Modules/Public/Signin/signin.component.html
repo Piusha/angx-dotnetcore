@@ -17,12 +17,40 @@
 	                                <span>or</span>
 	                                <hr class="right">
 	                            </div>
-	                        </div>
-			                <input class="form-control" type="text" placeholder="E-mail address">
-			                <input class="form-control" type="password" placeholder="Password">
-			                <div class="action">
-			                    <a class="btn btn-primary signup" [routerLink]="['/secure/dashboard']">Login</a>
-			                </div>                
+							</div>
+							<form [formGroup]="signinForm" (ngSubmit)='onLogin()' >
+									<input 
+									formControlName="email"
+									class="form-control" 
+									type="text" placeholder="E-mail address">
+
+									<div *ngIf="email.invalid && email.touched">
+											<div *ngIf = "email.errors?.required">
+												Email field can't be blank
+											</div>
+									 
+											<div *ngIf = "email.errors?.pattern">
+												The email id doesn't seem right
+											</div>
+									 
+									</div>
+
+									<input 
+									formControlName="password"
+									class="form-control" 
+									type="password" placeholder="Password">
+
+									<div *ngIf="password.invalid && password.touched">
+											Password needs to be more than 8 characters
+									</div>
+									<div class="action">
+											<button type="submit" class="btn btn-primary signup">
+												Login
+											</button>
+									</div>    
+							</form>
+			                
+			                            
 			            </div>
 			        </div>
 

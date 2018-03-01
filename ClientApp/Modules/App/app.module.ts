@@ -1,6 +1,11 @@
 import { NgModule } from '@angular/core';
 import { LocationStrategy, HashLocationStrategy, PathLocationStrategy } from '@angular/common';
 import { BrowserModule, Title } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule  } from '@angular/forms';
+
+
+
+
 import { AppComponent } from './app.component';
 
 
@@ -17,12 +22,14 @@ import { SideNavigationComponent } from '../Sheared/SideNavigation/side_navigati
 import { CalendarComponent } from '../Secure/Calendar/calendar.component';
 import { CustomTableComponent } from '../Sheared/Table/table.component';
 import { ItemsComponent } from '../Secure/Items/items.component';
+
 @NgModule({
 
     imports:[
         BrowserModule,
-        routing
-
+        routing,
+        FormsModule, 
+        ReactiveFormsModule
 
     ],
     declarations:[
