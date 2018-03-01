@@ -1,29 +1,39 @@
 import { Component, OnInit } from "@angular/core";
+import { ItemService } from "./items.service";
 
 
 
 @Component({
     selector:'calendar',
-    templateUrl:'./items.component.html'
+    templateUrl:'./items.component.html',
+    providers:[ItemService]
+
 })
 
 
 export class ItemsComponent implements OnInit{
     
+    constructor(private itemSrv:ItemService){}
+
     private items:object={};
     ngOnInit(){
         this.items ={
-            'tbheader':['h1','h2','h3','h4'],
+            'tbheader':['Values'],
             'tbBody':[]
         } 
-        for(let a = 0; a <10;a++){
-            this.items['tbBody'].push({
-                c1:'Row'+a,
-                c2:'Row'+a,
-                c3:'Row'+a,
-                c4:'Row'+a,
+        
 
-            });
-        }
+
+        let self = this;
+
+        this.itemSrv.getItems().subscribe(itms=>{
+            self.items['tbBody'] = itms;
+        })
+
+    }
+
+    private loadItems(){
+
+        
     }
 } 

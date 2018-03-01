@@ -5,6 +5,7 @@ import {
     Validators,
     FormBuilder } from '@angular/forms';
 import { SigninService } from "./signin.service";
+import { Router } from "@angular/router";
 @Component({
     selector:'signin',
     templateUrl:'./signin.component.html',
@@ -21,7 +22,8 @@ export class SigninComponent implements OnInit{
      * Angular form
      */
     constructor( private fb:FormBuilder,
-    private signinSrv:SigninService 
+    private signinSrv:SigninService,
+    private router:Router 
     ){
 
     }
@@ -59,8 +61,9 @@ export class SigninComponent implements OnInit{
         if(this.signinForm.valid){
             let authData = this.signinForm.value;
 
+            let self = this;
             this.signinSrv.sendLoginReq(authData).subscribe((data)=>{
-                console.log(data);
+               self.router.navigate['/secure/dashboard'];
             })
         }
     }
